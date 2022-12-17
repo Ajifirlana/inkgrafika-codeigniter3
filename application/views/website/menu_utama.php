@@ -97,7 +97,7 @@
                                 <div class="carousel-container">
                                     <div class="container">
                                         <h2 class="animate__animated animate__fadeInDown judulHero" id="judulHero"><?= $value->ukuran; ?></h2>
-                                        <p class="animate__animated animate__fadeInUp">Teks</p>
+                                        <p class="animate__animated animate__fadeInUp">Tersedia: <?= $value->jumlah; ?></p>
                                         <a href="#featured-services" class="btn-get-started scrollto animate__animated animate__fadeInUp">Selengkapnya</a>
                                     </div>
                                 </div>

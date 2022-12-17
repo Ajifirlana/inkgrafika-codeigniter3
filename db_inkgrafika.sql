@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 17, 2022 at 08:45 PM
+-- Generation Time: Dec 17, 2022 at 09:05 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.5
 
@@ -75,8 +75,8 @@ CREATE TABLE `profil` (
   `tentang` varchar(100) NOT NULL,
   `email` varchar(20) NOT NULL,
   `alamat` varchar(50) NOT NULL,
-  `facebook` varchar(50) NOT NULL,
-  `instagram` varchar(20) NOT NULL
+  `facebook` text NOT NULL,
+  `instagram` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -84,7 +84,7 @@ CREATE TABLE `profil` (
 --
 
 INSERT INTO `profil` (`id`, `nama_usaha`, `no_hp`, `tentang`, `email`, `alamat`, `facebook`, `instagram`) VALUES
-(1, 'inkgrafika', '089531941653', 'tentang inkgrafika yang mantap guuud', 'firlana89@gmail.com', 'jl. mandiraja banjarnegara', 'ok fb', 'ok ig');
+(1, 'inkgrafika', '089531941653', 'tentang inkgrafika yang mantap guuud', 'firlana89@gmail.com', 'jl. mandiraja banjarnegara', 'https://web.facebook.com/profile.phpid100014986094346', 'https://www.instagram.com/jasa_aplikasi471/');
 
 --
 -- Indexes for dumped tables

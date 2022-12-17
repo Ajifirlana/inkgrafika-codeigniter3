@@ -62,11 +62,11 @@
                             <li class="dropdown"><a href="#"><span>Masuk</span> <i class="bi bi-chevron-down"></i></a>
                                 <ul>
 
-                                    <li><a href="<?= base_url('user/tampil_login') ?>">Login</a></li>
+                                    <li><a href="<?= base_url('login') ?>">Login</a></li>
                                 </ul>
                             </li>
                         <?php }else{?>
-                            <li class="dropdown"><a href="#"><span><<?php echo $this->session->userdata('nama'); ?></span> <i class="bi bi-chevron-down"></i></a>
+                            <li class="dropdown"><a href="#"><span><?php echo $this->session->userdata('nama'); ?></span> <i class="bi bi-chevron-down"></i></a>
                                 <ul>
 
                                     <li><a href="<?= base_url('auth/logout') ?>">Logout</a></li>

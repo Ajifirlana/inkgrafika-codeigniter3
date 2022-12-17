@@ -83,5 +83,5 @@
       </ol>
       <!-- end breadcrumb -->
       <!-- begin page-header -->
-      <h1 class="page-header">Judul<small></small></h1>
+      <h1 class="page-header"><?php echo $title;?> <small></small></h1>
       <!-- end page-header -->

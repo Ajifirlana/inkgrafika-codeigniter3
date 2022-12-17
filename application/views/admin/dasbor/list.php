@@ -43,70 +43,22 @@ echo '<button type="button" class="close" data-dismiss="alert" aria-label="Close
             <!-- begin row -->
       <div class="row">
         <!-- begin col-3 -->
-        <div class="col-md-3 col-sm-6">
-          <div class="widget widget-stats bg-gradient-blue">
-            <div class="stats-icon"><i class="  fa fa-database"></i></div>
-            <div class="stats-info">
-              <h4>DATA KARYAWAN</h4>
-            </div>
-            <div class="stats-link">
-            
-              <a href="<?php echo base_url('admin/karyawan') ?>">View Detail <i class="fa fa-arrow-circle-o-right"></i></a>
-            </div>
-          </div>
-        </div>
+       
         <!-- end col-3 -->
-        <!-- begin col-3 -->
-        <div class="col-md-3 col-sm-6">
-          <div class="widget widget-stats bg-gradient-aqua">
-            <div class="stats-icon"><i class="fa fa-briefcase"></i></div>
-            <div class="stats-info">
-              <h4>DATA CABANG</h4>
-            </div>
-            <div class="stats-link">
-              <a href="<?php echo base_url('admin/cabang') ?>">View Detail <i class="fa fa-arrow-circle-o-right"></i></a>
-            </div>
-          </div>
-        </div>
+      
         <!-- end col-3 -->
 
                 <!-- begin col-3 -->
-        <div class="col-md-3 col-sm-6">
-          <div class="widget widget-stats bg-gradient-orange">
-            <div class="stats-icon"><i class="fa fa-envelope-open-o"></i></div>
-            <div class="stats-info">
-              <h4>DATA CUSTOMER</h4> 
-            </div>
-            <div class="stats-link">
-                       
-   <a href="<?php echo base_url('admin/customer') ?>">View Detail <i class="fa fa-arrow-circle-o-right"></i></a>
         
-              <a href="<?php echo base_url('admin/customer') ?>">View Detail <i class="fa fa-arrow-circle-o-right"></i></a>
-               
-            </div>
-          </div>
-        </div>
         <!-- end col-3 -->
 
-        <!-- begin col-3 -->
-        <div class="col-md-3 col-sm-6">
-          <div class="widget widget-stats bg-gradient-red">
-            <div class="stats-icon"><i class="fa fa-user"></i></div>
-            <div class="stats-info">
-              <h4>DATA USER/ADMIN</h4> 
-            </div>
-            <div class="stats-link">
-              <a href="<?php echo base_url('admin/user') ?>">View Detail <i class="fa fa-arrow-circle-o-right"></i></a>
-            </div>
-          </div>
-        </div>
         <!-- end col-3 -->
 
        <div class="col-md-12 col-sm-12">
           <div class="widget widget-stats bg-gradient-aqua">
             <div class="stats-icon"><i class="fa fa-wifi"></i></div>
             <div class="stats-info">
-             <h1 align="center" style="text-transform: uppercase;color: whitesmoke;"> <b>Assalamu'alaikum </b> <i class="fa fa-user"></i> <?php $this->session->userdata('username')?>
+             <h1 align="center" style="text-transform: uppercase;color: whitesmoke;"> <b>Assalamu'alaikum </b> <i class="fa fa-user"></i> <?php echo $this->session->userdata('username')?>
              <br>
 
                       <?php

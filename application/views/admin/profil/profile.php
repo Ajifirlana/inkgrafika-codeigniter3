@@ -10,18 +10,20 @@ if($this->session->flashdata('sukses')) {
 }
 
 //Opern Form
-echo form_open(base_url('admin/dasbor/profile'));
+echo form_open(base_url('admin/profil_usaha/update'));
 ?>
 
 <div class="col-md-6">
 	<div class="form-group">
 		<label>Nama Usaha</label>
-		<input type="text" name="nama" class="form-control" placeholder="Nama Usaha" value="" required> 	
+
+		<input type="hidden" name="id" class="form-control" placeholder="Nama Usaha" value="<?php echo $id?>" required>
+		<input type="text" name="nama_usaha" class="form-control" placeholder="Nama Usaha" value="<?php echo $nama_usaha?>" required> 	
 	</div>
 
 	<div class="form-group">
 		<label>Alamat</label>
-		<input type="email" name="email" class="form-control" placeholder="Email" value="" required> 	
+		<textarea class="form-control" cols="3" rows="3" name="alamat"><?php echo $alamat?></textarea>
 	</div>
 
 	<div class="form-group">

@@ -42,18 +42,6 @@ echo '<button type="button" class="close" data-dismiss="alert" aria-label="Close
 
             <!-- begin row -->
       <div class="row">
-        <!-- begin col-3 -->
-       
-        <!-- end col-3 -->
-      
-        <!-- end col-3 -->
-
-                <!-- begin col-3 -->
-        
-        <!-- end col-3 -->
-
-        <!-- end col-3 -->
-
        <div class="col-md-12 col-sm-12">
           <div class="widget widget-stats bg-gradient-aqua">
             <div class="stats-icon"><i class="fa fa-wifi"></i></div>

@@ -3,11 +3,11 @@
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
 
-class Testimoni_model extends CI_Model
+class Profil_model extends CI_Model
 {
 
-    public $table = 'testimoni';
-    public $id = 'id_testimoni';
+    public $table = 'profil';
+    public $id = 'id';
     public $order = 'DESC';
 
     function __construct()
@@ -29,29 +29,7 @@ class Testimoni_model extends CI_Model
         return $this->db->get($this->table)->row();
     }
     
-    // get total rows
-    function total_rows($q = NULL) {
-        $this->db->like('id_testimoni', $q);
-	$this->db->or_like('testi', $q); 
-	$this->db->from($this->table);
-        return $this->db->count_all_results();
-    }
-
-    // get data with limit and search
-    function get_limit_data($limit, $start = 0, $q = NULL) {
-        $this->db->order_by($this->id, $this->order);
-        $this->db->like('id_testimoni', $q);
-	$this->db->or_like('testi', $q); 
-	$this->db->limit($limit, $start);
-        return $this->db->get($this->table)->result();
-    }
-
-    // insert data
-    function insert($data)
-    {
-        $this->db->insert($this->table, $data);
-    }
-
+    
     // update data
     function update($id, $data)
     {

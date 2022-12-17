@@ -6,8 +6,8 @@ if (!defined('BASEPATH'))
 class Slider_model extends CI_Model
 {
 
-    public $table = 'slider';
-    public $id = 'id_slider';
+    public $table = 'banner';
+    public $id = 'id';
     public $order = 'DESC';
 
     function __construct()

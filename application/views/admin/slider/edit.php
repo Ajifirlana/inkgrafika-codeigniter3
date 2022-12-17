@@ -39,7 +39,7 @@
         </div>
          <div class="form-group" style="margin-left: 40%">
         <label class="control-label"></label>
-	    <input type="hidden" name="id_slider" value="<?php echo $id_slider; ?>" /> 
+	    <input type="hidden" name="id" value="<?php echo $id; ?>" /> 
 	    <button type="submit" class="btn btn-primary"><?php echo $button ?></button> 
 	    <a href="<?php echo base_url('admin/slider') ?>" class="btn btn-danger">Cancel</a>
         </div>

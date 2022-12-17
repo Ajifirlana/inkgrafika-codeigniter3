@@ -18,19 +18,8 @@ class Dasbor extends CI_Controller {
 	//Homepage
 	public function index()
 	{
-		
-		// $user = $this->user_model->listing();
-		// $tugas = $this->Tugas_model->listing();
-		// $karyawan = $this->Karyawan_model->listing();
-		// $laporan = $this->Laporan_kerja_model->listingadmin();
-		// 'title'  => 'Selamat datang di Dashboard',
-		// 'Tes'	 => ''.count($user).'',
-		// 'tugas'	 => ''.count($tugas).'',
-		// 'karyawan'	 => ''.count($karyawan).'',
-		// 'laporan'	 => ''.count($laporan).'',
-
-
 		$data = array(  
+				'title'=>'Inkgrafika',
 						'isi'    => 'admin/dasbor/list');
 
 		$this->load->view('admin/layout/wrapper', $data, FALSE);

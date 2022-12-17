@@ -32,7 +32,7 @@
           </li>
 
 
-            <li><a href="<?php echo base_url('admin/profil') ?>">
+            <li><a href="<?php echo base_url('admin/profil_usaha') ?>">
                   <i class="fa fa-users bg-gradient-blue"></i>
                   <span>Profil</span>
               </a></li>
@@ -44,7 +44,7 @@
               </a>
             <ul class="sub-menu">
               
-              <li><a href="<?php echo base_url('admin/slider') ?>">Data Slider</a></li> 
+              <li><a href="<?php echo base_url('admin/slider') ?>">Data Banner</a></li> 
               <li><a href="<?php echo base_url('admin/testimoni') ?>">Data Testimoni</a></li> 
               <li><a href="<?php echo base_url('admin/galeri') ?>">Data Galeri</a></li> 
               <li><a href="<?php echo base_url('admin/artikel') ?>">Data Artikel</a></li> 

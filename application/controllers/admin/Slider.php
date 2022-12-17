@@ -14,10 +14,6 @@ class Slider extends CI_Controller
 
     public function index()
     { 
-    	   if($this->session->userdata('akses_level') != "Admin"){
-            $this->session->set_flashdata('terbatas', 'Hak akses anda terbatas');
-            redirect(base_url('admin/dasbor'),'refresh');
-        	}
 $slider = $this->Slider_model->get_all();
 		$data = array( 'title'  	=>'',
 					    'slider'		=> $slider,
@@ -59,7 +55,7 @@ $slider = $this->Slider_model->get_all();
             $data = array(
                 'button' => 'Update',
                 'action' => base_url('admin/slider/update_action'),
-		'id_slider' => set_value('id_slider', $row->id_slider),
+		'id' => set_value('id', $row->id),
 		'image' => set_value('image', $row->image),
 
         'title'                =>'Edit Data Slider',
@@ -73,22 +69,22 @@ $slider = $this->Slider_model->get_all();
     }
 
     function update_action(){
-    	$this->update($this->input->post('id_slider', TRUE));
+    	$this->update($this->input->post('id', TRUE));
         
              if ($_FILES['image']['name']=='') {
             $data = array(
-		'id_slider' => $this->input->post('id_slider',TRUE),
+		'id' => $this->input->post('id',TRUE),
 	    );
-            $this->Slider_model->update($this->input->post('id_slider', TRUE), $data);
+            $this->Slider_model->update($this->input->post('id', TRUE), $data);
             $this->session->set_flashdata('sukses', 'Update Record Success and image none');
             redirect(base_url('admin/slider'));
         } else {
     	$data = array(
-        'id_slider' => $this->input->post('id_slider',TRUE),
+        'id' => $this->input->post('id',TRUE),
         'image' => upload_gambar_biasa('slider','gambar/thumb','jpg|png',10000,'image'),
         );
 
-            $this->Slider_model->update($this->input->post('id_slider', TRUE), $data);
+            $this->Slider_model->update($this->input->post('id', TRUE), $data);
             $this->session->set_flashdata('sukses', 'Update Record Success and image update');
             redirect(base_url('admin/slider'));
     }

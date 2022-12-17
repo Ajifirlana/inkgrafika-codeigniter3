@@ -69,6 +69,7 @@
                             <li class="dropdown"><a href="#"><span><?php echo $this->session->userdata('nama'); ?></span> <i class="bi bi-chevron-down"></i></a>
                                 <ul>
 
+                                    <li><a href="#"><?php echo $this->session->userdata('username') ?></a></li>
                                     <li><a href="<?= base_url('login/logout') ?>">Logout</a></li>
                                 </ul>
                             </li>

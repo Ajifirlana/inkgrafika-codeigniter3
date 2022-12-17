@@ -21,7 +21,12 @@ class Profil_usaha extends CI_Controller
         'title'                =>'Edit Data Profil',
             'id'=>$row->id,
             'nama_usaha'=>$row->nama_usaha,
+            'no_hp'=>$row->no_hp,
+            'tentang'=>$row->tentang,
+            'email'=>$row->email,
             'alamat'=>$row->alamat,
+            'facebook'=>$row->facebook,
+            'instagram'=>$row->instagram,
 				'title'=>'Inkgrafika',
             'isi'    => 'admin/profil/profile');
 
@@ -29,7 +34,12 @@ $this->load->view('admin/layout/wrapper', $data, FALSE);
     }
     function update(){
         $data = array('nama_usaha'=>$this->input->post('nama_usaha'),
-                    'alamat'=>$this->input->post('alamat'));
+            'no_hp'=>$this->input->post('no_hp'),
+            'tentang'=>$this->input->post('tentang'),
+            'email'=>$this->input->post('email'),
+                    'alamat'=>$this->input->post('alamat'),
+                    'facebook'=>$this->input->post('facebook'),
+                    'instagram'=>$this->input->post('instagram'),);
 
             $this->Profil_model->update($this->input->post('id'), $data);
             $this->session->set_flashdata('sukses', 'Update Record Success');

@@ -55,7 +55,7 @@
                         <ul>
                             <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
                             <li><a class="nav-link scrollto" href="#about">Tentang</a></li>
-                            <li><a class="nav-link scrollto " href="#portfolio">Produk/Layanan</a></li>
+                            <li><a class="nav-link scrollto " href="#banner">Produk/Layanan</a></li>
 
                             <li><a class="nav-link scrollto" href="#contact">Kontak</a></li>
                             <?php if($this->session->userdata('username') == null){?>
@@ -69,7 +69,7 @@
                             <li class="dropdown"><a href="#"><span><?php echo $this->session->userdata('nama'); ?></span> <i class="bi bi-chevron-down"></i></a>
                                 <ul>
 
-                                    <li><a href="<?= base_url('auth/logout') ?>">Logout</a></li>
+                                    <li><a href="<?= base_url('login/logout') ?>">Logout</a></li>
                                 </ul>
                             </li>
                         <?php }?>
@@ -132,11 +132,11 @@
         </section><!-- End Call To Action Section -->
 
         <!-- ======= Portfolio Section ======= -->
-        <section id="portfolio" class="section-bg">
+        <section id="banner" class="section-bg">
             <div class="container" data-aos="fade-up">
 
                 <header class="section-header">
-                    <h3 class="section-title">Produk atau Layanan</h3>
+                    <h3 class="section-title">Produk Banner,Stiker,Buku,Yasin,Mug,Stampel,Bendera,Nota</h3>
                 </header>
 
                 <div class="row ">
@@ -252,7 +252,7 @@
                         <ul>
                             <li><i class="bi bi-chevron-right"></i> <a href="#hero">Home</a></li>
                             <li><i class="bi bi-chevron-right"></i> <a href="#about">Tentang</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#portfolio">Produk/Layanan</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#banner">Produk/Layanan</a></li>
                             <li><i class="bi bi-chevron-right"></i> <a href="#contact">Kontak</a></li>
                         </ul>
                     </div>

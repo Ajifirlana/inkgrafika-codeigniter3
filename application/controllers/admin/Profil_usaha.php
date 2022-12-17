@@ -18,7 +18,7 @@ class Profil_usaha extends CI_Controller
 		$data = array(  
             
 				'title'=>'Inkgrafika',
-            'isi'    => 'admin/profil/list');
+            'isi'    => 'admin/profil/profile');
 
 $this->load->view('admin/layout/wrapper', $data, FALSE);
     }

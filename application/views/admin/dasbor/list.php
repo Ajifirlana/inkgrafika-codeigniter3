@@ -106,7 +106,7 @@ echo '<button type="button" class="close" data-dismiss="alert" aria-label="Close
           <div class="widget widget-stats bg-gradient-aqua">
             <div class="stats-icon"><i class="fa fa-wifi"></i></div>
             <div class="stats-info">
-             <h1 align="center" style="text-transform: uppercase;color: whitesmoke;"> <b>Assalamu'alaikum </b> <i class="fa fa-user"></i> nama 
+             <h1 align="center" style="text-transform: uppercase;color: whitesmoke;"> <b>Assalamu'alaikum </b> <i class="fa fa-user"></i> <?php $this->session->userdata('username')?>
              <br>
 
                       <?php
@@ -133,9 +133,6 @@ echo '<button type="button" class="close" data-dismiss="alert" aria-label="Close
               ?>             
               </h1>
               <hr>
-              <center>
-              <img width="70%" src="<?php echo base_url() ?>assets/img/logodanapati.png">
-              </center>
 
 
             </div>

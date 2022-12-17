@@ -46,7 +46,7 @@ $tgl_exp ="2024";
     <div class="row">
         <div class="col-md-12">
             <div class="text-center m-b-md">
-                <h3><img src="<?php echo base_url() ?>/assets/img/danalogo.png"></h3>
+                <!-- <h3><img src="<?php echo base_url() ?>/assets/img/danalogo.png"></h3> -->
                 <!-- <small>Silahkan Login</small> -->
             </div>
             <div class="hpanel">

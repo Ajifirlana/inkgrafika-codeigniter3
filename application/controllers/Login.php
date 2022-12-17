@@ -59,7 +59,6 @@ class Login extends CI_Controller {
 		$this->session->unset_userdata('id_user');
 		$this->session->unset_userdata('nama');
 		$this->session->set_flashdata('sukses', ' Anda berhasil logout');
-		$this->user_model->user_off($username);
 		redirect(base_url('login'),'refresh');
 	}
 

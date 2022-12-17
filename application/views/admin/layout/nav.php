@@ -54,7 +54,7 @@
           </li>
           <li class="has-sub">
          
-          <li><a href="<?php echo base_url('admin/logout') ?>">
+          <li><a href="<?php echo base_url('login/logout') ?>">
                   <i class="fa fa-users bg-gradient-blue"></i>
                   <span>Logout</span>
               </a></li>

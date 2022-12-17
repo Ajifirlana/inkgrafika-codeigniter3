@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Arkatama Store</title>
+    <title><?php echo $row->nama_usaha;?></title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -261,7 +261,7 @@
                     <div class="col-lg-3 col-md-6 footer-contact">
                         <h4>Kontak Kami</h4>
                         <p>
-                           <?php echo $row->alamat;?>
+                           <?php echo $row->alamat;?><br>
                             <strong>Phone:</strong> <?php echo $row->no_hp;?><br>
                             <strong>Email:</strong> <?php echo $row->email;?><br>
                         </p>

@@ -44,7 +44,7 @@
               </a>
             <ul class="sub-menu">
               
-              <li><a href="<?php echo base_url('admin/slider') ?>">Data Banner</a></li> 
+              <li><a href="<?php echo base_url('admin/slider') ?>">Data Menu</a></li> 
             </ul>
           </li>
           <li class="has-sub">

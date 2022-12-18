@@ -62,7 +62,7 @@ $slider = $this->Slider_model->get_all();
         'jumlah' => set_value('jumlah', $row->jumlah),
 		'image' => set_value('image', $row->image),
 
-        'title'                =>'Edit Data Banner',
+        'title'                =>'Edit Data Menu',
         'isi'                  =>'admin/slider/edit');
 
         $this->load->view('admin/layout/wrapper', $data, FALSE);

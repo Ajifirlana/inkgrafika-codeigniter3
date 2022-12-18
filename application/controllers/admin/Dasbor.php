@@ -8,9 +8,6 @@ class Dasbor extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model('user_model');
-		$this->load->model('Tugas_model');
-		$this->load->model('Karyawan_model');
-		$this->load->model('Laporan_kerja_model');
 
 
 	}

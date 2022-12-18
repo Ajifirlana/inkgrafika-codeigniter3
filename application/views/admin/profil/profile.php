@@ -39,7 +39,7 @@ echo form_open(base_url('admin/profil_usaha/update'));
 
 	<div class="form-group">
 		<input type="submit" name="submit" class="btn btn-success" value="Simpan Data">
-		<input type="reset" name="reset" class="btn btn-default btn-lg" value="Reset">
+		<input type="reset" name="reset" class="btn btn-default" value="Reset">
 	</div>
 
 </div>

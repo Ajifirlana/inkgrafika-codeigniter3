@@ -49,7 +49,7 @@
                 <div class="col-xl-11 d-flex align-items-center justify-content-between">
                     <!-- <h1 class="logo"><a href="index.html">Arkatama</a></h1> -->
                     <!-- Uncomment below if you prefer to use an image logo -->
-                    <a href="<?= base_url('user'); ?>" class="logo"><img src="<?= base_url('gambar/') ?>logo1.png" alt="" class="img-fluid"></a>
+                    <a href="<?= base_url('user'); ?>" class="logo"><img src="<?= base_url('assets/img/') ?>ink.png" alt="" class="img-fluid"></a>
 
                     <nav id="navbar" class="navbar">
                         <ul>

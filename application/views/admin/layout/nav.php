@@ -45,11 +45,6 @@
             <ul class="sub-menu">
               
               <li><a href="<?php echo base_url('admin/slider') ?>">Data Banner</a></li> 
-              <li><a href="<?php echo base_url('admin/testimoni') ?>">Data Testimoni</a></li> 
-              <li><a href="<?php echo base_url('admin/galeri') ?>">Data Galeri</a></li> 
-              <li><a href="<?php echo base_url('admin/artikel') ?>">Data Artikel</a></li> 
-              <li><a href="<?php echo base_url('admin/buletin') ?>">Buletin DJM</a></li> 
-              <li><a href="<?php echo base_url('admin/persen') ?>">Persen Simulasi</a></li> 
             </ul>
           </li>
           <li class="has-sub">

@@ -4,7 +4,7 @@
 
 <div class="col-md-4" style="margin-bottom: 10px">
     <a href="<?php echo base_url('admin/slider/create') ?>" class="btn btn-primary">
-    <i class="fa fa-plus"> </i> Tambah Banner</a> 
+    <i class="fa fa-plus"> </i> Tambah Data</a> 
 </div>
 
 <!-- Cetak Notifikasi -->
@@ -41,7 +41,9 @@ if($this->session->flashdata('sukses')) {
         <thead>
          <tr>
         <th>No</th>
-        <th>Banner</th>
+        <th>Ukuran</th>
+        <th>Jumlah</th>
+        <th>Image</th>
        
         <th width="15%">Action</th>
     </tr>
@@ -50,6 +52,8 @@ if($this->session->flashdata('sukses')) {
 <?php $i = 1; foreach($slider as $row) { ?>
     <tr>
         <td><?php echo $i ?></td>
+        <td><?php echo $row->ukuran;?></td>
+        <td><?php echo $row->jumlah;?></td>
         <td><img src="<?php echo base_url('gambar/thumb/'.$row->image);?>" class="img img-thumbnail" width="60"></td>
        
         <td>

@@ -40,10 +40,12 @@ $slider = $this->Slider_model->get_all();
     public function create_action() 
     { 
  $data = array( 
+        'ukuran' => $this->input->post('ukuran',TRUE),
+        'jumlah' => $this->input->post('jumlah',TRUE),
         'image' => upload_gambar_biasa('slider','gambar/thumb','jpg|png',10000,'image') );
 
             $this->Slider_model->insert($data);
-            $this->session->set_flashdata('message', 'Create Record Success');
+            $this->session->set_flashdata('sukses', 'Create Record Success');
             redirect(base_url('admin/slider'));
     }
 
@@ -56,14 +58,16 @@ $slider = $this->Slider_model->get_all();
                 'button' => 'Update',
                 'action' => base_url('admin/slider/update_action'),
 		'id' => set_value('id', $row->id),
+        'ukuran' => set_value('ukuran', $row->ukuran),
+        'jumlah' => set_value('jumlah', $row->jumlah),
 		'image' => set_value('image', $row->image),
 
-        'title'                =>'Edit Data Slider',
+        'title'                =>'Edit Data Banner',
         'isi'                  =>'admin/slider/edit');
 
         $this->load->view('admin/layout/wrapper', $data, FALSE);
         } else {
-            $this->session->set_flashdata('message', 'Record Not Found');
+            $this->session->set_flashdata('sukses', 'Record Not Found');
             redirect(base_url('admin/slider'));
         }
     }
@@ -74,6 +78,8 @@ $slider = $this->Slider_model->get_all();
              if ($_FILES['image']['name']=='') {
             $data = array(
 		'id' => $this->input->post('id',TRUE),
+        'ukuran' => $this->input->post('ukuran',TRUE),
+        'jumlah' => $this->input->post('jumlah',TRUE),
 	    );
             $this->Slider_model->update($this->input->post('id', TRUE), $data);
             $this->session->set_flashdata('sukses', 'Update Record Success and image none');
@@ -81,6 +87,8 @@ $slider = $this->Slider_model->get_all();
         } else {
     	$data = array(
         'id' => $this->input->post('id',TRUE),
+        'ukuran' => $this->input->post('ukuran',TRUE),
+        'jumlah' => $this->input->post('jumlah',TRUE),
         'image' => upload_gambar_biasa('slider','gambar/thumb','jpg|png',10000,'image'),
         );
 

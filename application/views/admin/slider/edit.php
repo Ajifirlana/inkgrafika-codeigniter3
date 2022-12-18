@@ -18,9 +18,17 @@
     <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
 	    
 
-	    <div class="form-group col-md-6">
+<div class="col-md-6">
             
+<div class="form-group">
+        <label>Ukuran</label>
+        <input type="text" name="ukuran" class="form-control" value="<?php echo $ukuran?>" required>    
+    </div>
             
+<div class="form-group">
+        <label>Jumlah</label>
+        <input type="text" name="jumlah" class="form-control" value="<?php echo $jumlah?>" required>    
+    </div>
   
             <label for="varchar">Image</label>
              <input type="file" class="form-control" name="image"  />

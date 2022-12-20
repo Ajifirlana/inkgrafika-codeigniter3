@@ -6,7 +6,7 @@ $tgl_exp ="2024";
          ?>
 
       <script type="text/javascript" language="javascript">
-                alert("Masa Berlaku Telah Habis Silahkan Hubungi Programmer terdekat untuk membayar perpanjangan aplikasi...!!!");
+                alert("Masa Berlaku Telah Habis Silahkan Hubungi Programmer terdekat untuk membayar perpanjangan aplikasi...!!!atau menghubungi wa: 089531941653");
               </script>
        <?php }else{?> 
 <!DOCTYPE html>
